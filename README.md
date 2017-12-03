@@ -14,9 +14,9 @@ Experiment outline + relevant scripts:<br />
    3.) Re-format plate reader data into a convenient form for downstream
        analysis: formatData.m<br />
    4.) Plot data: plotData.m, plotIndivData.m<br />
-   5.) Calculate interaction values + assemble iNets: interactionNetwork.m<br />
+   5.) Calculate interaction values + assemble iNets: synergyMap.m<br />
    6.) [IN PROGRESS] Infer higher-order cocktail efficacy + calculate 
-       optimal cocktails: topCandidates.m<br />
+       optimal cocktails: minIntValSolver.m<br />
        
  <br />
 
