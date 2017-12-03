@@ -65,7 +65,7 @@ for i=1:1:numPhages
 end 
 [sortedVals, sortIdx] = sort(means);
 sortedKeys = keys(sortIdx);
-sortedCols = sortIdx
+sortedCols = sortIdx;
 newMap = [];
 for i = 1:numel(sortedKeys)
     newCol = intValsForEachPhage(num2str(sortedKeys(i)));
@@ -79,7 +79,7 @@ for i = 1:size(newMap,1)
 end
 newMap = [meansNewMap' newMap];
 [newMap sortIndices] = sortrows(newMap); % Sorts based on first col, which has been set to the means
-sortedRows = sortIndices
+sortedRows = sortIndices;
 map = newMap(:,2:24); % 19/24 for 1536 experiments
 for i = 1:23 %18/23
     for k = 1:23 % 18/23
@@ -102,13 +102,13 @@ for k = 1:numPhages-1
     rowLabels = [rowLabels num2str(k)];
 end
 
-load('MyColormaps','mycmap');
+load('heatmapColorMap','mycmap');
 figure; hold on
 heatmap(map,rowLabels,colLabels,[],'fontsize',2, 'Colormap', mycmap,'Colorbar', true, 'NaNColor', [0 0 0], 'MinColorValue', 0, 'MaxColorValue', 2, 'GridLines', '-');
 
 
 % [1 1 1] for white, [.398 .398 .398] for nice grey
-title('Interaction Values - Bcep phages');
+title('Example iNet');
 
 
 % % Add x and y labels
