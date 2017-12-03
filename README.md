@@ -19,5 +19,7 @@ Experiment outline + relevant scripts:<br />
        optimal cocktails: minIntValSolver.m<br />
        
  <br />
+ 
+ Package I am borrowing: Daniel Helmick's varycolor https://www.mathworks.com/matlabcentral/fileexchange/21050-varycolor
 
  Copyright (c) 2017 Joseph Kreitz (joekreitz@gmail.com).
